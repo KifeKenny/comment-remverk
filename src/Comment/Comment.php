@@ -1,6 +1,6 @@
 <?php
 
-namespace kifekenny\Comment;
+namespace Kifekenny\Comment;
 
 use \Anax\Database\ActiveRecordModel;
 
