@@ -1,6 +1,6 @@
 <?php
 
-namespace Anax\Comment2\HTMLForm;
+namespace kifekenny\Comment\HTMLForm;
 
 use \Anax\HTMLForm\FormModel;
 use \Anax\DI\DIInterface;
@@ -74,7 +74,7 @@ class Com2Delete extends FormModel
      */
     public function isgetItemDetails($id)
     {
-        $comment2 = new Comment2();
+        $comment2 = new Comment();
         $comment2->setDb($this->di->get("db"));
         $comment2->find("id", $id);
         return $comment2;
@@ -90,7 +90,7 @@ class Com2Delete extends FormModel
      */
     public function callbackSubmit()
     {
-        $comment = new Comment2();
+        $comment = new Comment();
         $comment->setDb($this->di->get("db"));
         $comment->find("id", $this->form->value("id"));
         $comment->delete();

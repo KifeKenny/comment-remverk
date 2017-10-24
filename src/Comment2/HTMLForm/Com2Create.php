@@ -1,6 +1,6 @@
 <?php
 
-namespace Anax\Comment2\HTMLForm;
+namespace kifekenny\Comment\HTMLForm;
 
 use \Anax\HTMLForm\FormModel;
 use \Anax\DI\DIInterface;
@@ -64,7 +64,7 @@ class Com2Create extends FormModel
      */
     public function callbackSubmit()
     {
-        $comment = new Comment2();
+        $comment = new Comment();
         $comment->setDb($this->di->get("db"));
         $comment->title      = $this->form->value("Title");
         $comment->content    = $this->form->value("Content");

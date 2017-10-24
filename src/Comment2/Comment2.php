@@ -1,13 +1,13 @@
 <?php
 
-namespace Anax\Comment2;
+namespace kifekenny\Comment;
 
 use \Anax\Database\ActiveRecordModel;
 
 /**
  * A database driven model.
  */
-class Comment2 extends ActiveRecordModel
+class Comment extends ActiveRecordModel
 {
     /**
      * @var string $tableName name of the database table.

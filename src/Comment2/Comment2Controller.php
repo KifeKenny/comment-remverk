@@ -1,15 +1,15 @@
 <?php
 
-namespace Anax\Comment2;
+namespace kifekenny\Comment;
 
 use \Anax\Configure\ConfigureInterface;
 use \Anax\Configure\ConfigureTrait;
 use \Anax\DI\InjectionAwareInterface;
 use \Anax\DI\InjectionAwareTrait;
-use \Anax\Comment2\Comment2;
-use \Anax\Comment2\HTMLForm\Com2Create;
-use \Anax\Comment2\HTMLForm\Com2Update;
-use \Anax\Comment2\HTMLForm\Com2Delete;
+use \kifekenny\Comment\Comment;
+use \kifekenny\Comment\HTMLForm\Com2Create;
+use \kifekenny\Comment\HTMLForm\Com2Update;
+use \kifekenny\Comment\HTMLForm\Com2Delete;
 
 /**
  * A controller class.
@@ -40,7 +40,7 @@ class Comment2Controller implements
         $title      = "View | Comments";
         $view       = $this->di->get("view");
         $pageRender = $this->di->get("pageRender");
-        $comment2   = new Comment2();
+        $comment2   = new Comment();
         $comment2->setDb($this->di->get("db"));
 
         $data = [
