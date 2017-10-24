@@ -1,7 +1,7 @@
 {
-    "name": "anax/comment",
+    "name": "kifeKenny/Comment",
     "type": "library",
-    "description": "Anax comment module.",
+    "description": "kifeKenny comment module.",
     "keywords": ["boilerplate", "framework", "mvc", "micro", "education"],
     "homepage": "https://dbwebb.se/anax",
     "license": "MIT",
