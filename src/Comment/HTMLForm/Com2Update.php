@@ -1,10 +1,10 @@
 <?php
 
-namespace kifekenny\Comment\HTMLForm;
+namespace Kifekenny\Comment\HTMLForm;
 
 use \Anax\HTMLForm\FormModel;
 use \Anax\DI\DIInterface;
-use \Anax\Comment2\Comment2;
+use \Kifekenny\Comment\Comment;
 
 /**
  * Form to update an item.

@@ -6,7 +6,7 @@ use \Anax\Configure\ConfigureInterface;
 use \Anax\Configure\ConfigureTrait;
 use \Anax\DI\InjectionAwareInterface;
 use \Anax\DI\InjectionAwareTrait;
-use \kifekenny\Comment\Comment;
+use \kifekenny\Comment2\Comment;
 use \kifekenny\Comment\HTMLForm\Com2Create;
 use \kifekenny\Comment\HTMLForm\Com2Update;
 use \kifekenny\Comment\HTMLForm\Com2Delete;
