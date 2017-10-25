@@ -28,5 +28,11 @@ return [
             "path" => "delete/{id:digit}",
             "callable" => ["Comment2Controller", "comment2Delete"],
         ],
+        [
+            "info" => "set session (mostly for testing)",
+            "requestMethod" => "get|post",
+            "path" => "setUser",
+            "callable" => ["Comment2Controller", "setUser"],
+        ],
     ]
 ];

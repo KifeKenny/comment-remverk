@@ -72,6 +72,6 @@ class Com2Create extends FormModel
         $comment->userId    = $this->form->value("userId");
         // $comment->user_id
         $comment->save();
-        $this->di->get("response")->redirect("comment2");
+        $this->di->get("response")->redirect("");
     }
 }

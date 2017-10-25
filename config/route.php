@@ -8,7 +8,7 @@ return [
     "routeFiles" => [
         [
             // Add routes from bookController and mount on book/
-            "mount" => "comment2",
-            "file" => __DIR__ . "/route2/comment2.php",
+            "mount" => "comment",
+            "file" => __DIR__ . "/route/comment.php",
         ],
 ];

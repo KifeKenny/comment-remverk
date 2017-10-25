@@ -94,6 +94,6 @@ class Com2Delete extends FormModel
         $comment->setDb($this->di->get("db"));
         $comment->find("id", $this->form->value("id"));
         $comment->delete();
-        $this->di->get("response")->redirect("comment2");
+        $this->di->get("response")->redirect("");
     }
 }

@@ -97,6 +97,6 @@ class Com2Update extends FormModel
         $comment->title = $this->form->value("Title");
         $comment->content = $this->form->value("Content");
         $comment->save();
-        $this->di->get("response")->redirect("comment2/edit/{$comment->id}");
+        $this->di->get("response")->redirect("");
     }
 }
