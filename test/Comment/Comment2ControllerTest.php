@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
  */
 class Comment2ControllerTest extends \PHPUnit_Framework_TestCase
 {
-    protected static $di;
+    protected static $dis;
     protected static $controller;
     /**
      * Test case to construct object and verify that the object
@@ -18,10 +18,10 @@ class Comment2ControllerTest extends \PHPUnit_Framework_TestCase
      */
     public static function setUpBeforeClass()
     {
-        self::$di = new \Anax\DI\DIFactoryConfig();
-        self::$di->configure(ANAX_APP_PATH . "/test/config/testDi.php");
+        self::$dis = new \Anax\DI\DIFactoryConfig();
+        self::$dis->configure(ANAX_APP_PATH . "/test/config/testDi.php");
         self::$controller = new Comment2Controller();
-        self::$controller->setDI(self::$di);
+        self::$controller->setDI(self::$dis);
     }
 
     public function testGetIndex()

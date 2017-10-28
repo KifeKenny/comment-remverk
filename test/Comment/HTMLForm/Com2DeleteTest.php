@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
  */
 class Com2DeleteTest extends \PHPUnit_Framework_TestCase
 {
-    protected static $di;
+    protected static $dis;
     protected static $session;
     /**
      * Test case to construct object and verify that the object
@@ -19,12 +19,13 @@ class Com2DeleteTest extends \PHPUnit_Framework_TestCase
     public static function setUpBeforeClass()
     {
         // echo "hi";
-        self::$di = new \Anax\DI\DIFactoryConfig();
-        self::$di->configure(ANAX_APP_PATH . "/test/config/testDi.php");
+        self::$dis = new \Anax\DI\DIFactoryConfig();
+        self::$dis->configure(ANAX_APP_PATH . "/test/config/testDi.php");
     }
 
     public function testConstruct()
     {
-        $delete = new Com2Delete(self::$di, 1);
+        new Com2Delete(self::$dis, 1);
+        // $this->assertTrue($delete);
     }
 }

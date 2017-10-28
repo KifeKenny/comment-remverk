@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
  */
 class Com2CreateTest extends \PHPUnit_Framework_TestCase
 {
-    protected static $di;
+    protected static $dis;
     /**
      * Test case to construct object and verify that the object
      * has the expected properties due various ways of constructing
@@ -18,12 +18,12 @@ class Com2CreateTest extends \PHPUnit_Framework_TestCase
     public static function setUpBeforeClass()
     {
         // echo "hi";
-        self::$di = new \Anax\DI\DIFactoryConfig();
-        self::$di->configure(ANAX_APP_PATH . "/test/config/testDi.php");
+        self::$dis = new \Anax\DI\DIFactoryConfig();
+        self::$dis->configure(ANAX_APP_PATH . "/test/config/testDi.php");
     }
 
     public function testConstruct()
     {
-        $create = new Com2Create(self::$di);
+        new Com2Create(self::$dis);
     }
 }

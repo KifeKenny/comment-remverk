@@ -149,9 +149,6 @@ class Comment2Controller implements
 
     public function setUser()
     {
-        $session = $this->di->get("session");
-        $userId = $session->get("user_id");
-
         $title      = "Set | Session";
         $view       = $this->di->get("view");
         $pageRender = $this->di->get("pageRender");
