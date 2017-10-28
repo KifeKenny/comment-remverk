@@ -48,7 +48,6 @@ class Comment2Controller implements
             "items" => $comment2->findAll(),
         ];
 
-
         $view->add("incl/header", ["title" => ["Book", "css/style.css"]]);
         $view->add("incl/side-bar1");
         $view->add("comment/viewAll", $data);

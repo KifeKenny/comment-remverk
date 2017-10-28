@@ -1,24 +1,23 @@
-Anax comment
+Anax comment module
 ==================================
 
-[![Latest Stable Version](https://poser.pugx.org/anax/comment/v/stable)](https://packagist.org/packages/anax/comment)
-[![Join the chat at https://gitter.im/mosbth/anax](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/canax?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://travis-ci.org/canax/comment.svg?branch=master)](https://travis-ci.org/canax/comment)
-[![CircleCI](https://circleci.com/gh/canax/comment.svg?style=svg)](https://circleci.com/gh/canax/comment)
-[![Build Status](https://scrutinizer-ci.com/g/canax/comment/badges/build.png?b=master)](https://scrutinizer-ci.com/g/canax/comment/build-status/master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/canax/comment/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/canax/comment/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/canax/comment/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/canax/comment/?branch=master)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/d831fd4c-b7c6-4ff0-9a83-102440af8929/mini.png)](https://insight.sensiolabs.com/projects/d831fd4c-b7c6-4ff0-9a83-102440af8929)
+A Comment module for anax. This module creates comment and add them to
+a database.
 
-Anax comment module.
+To create a comment a session most be set with the key values of
+"user_id", "user_mail". This values will be added to the comment database
+and be made so that only the same "user_id" can commit CRUD on given comment
+with the exception of "user_id = 1" wich can do CRUD on all comments.
 
 
 
 Usage
 ------------------
 
-Short examples on how to use the module comment.
+To use module you will be needing a Anax page with the basic modules like request, response, router, session. You will also need a mysql database with matching column names as in the Comment class. The code for my database is in the sql folder.
 
+Basic setup is easy you simply download the module with composer, setup a database.
+Then you can use my router and view files. Then you will have a simple running comment system.
 
 
 License
@@ -30,6 +29,6 @@ This software carries a MIT license.
 
 ```
  .  
-..:  Copyright (c) 2017 Kevin Jönsson (kewin_256@hotmail.com)
+..:  Copyright (c) 2017 Kevin Olguin Jönsson (kewin_256@hotmail.com)
 ```
 # comment-remverk

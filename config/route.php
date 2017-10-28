@@ -11,4 +11,5 @@ return [
             "mount" => "comment",
             "file" => __DIR__ . "/route/comment.php",
         ],
+    ]
 ];
