@@ -5,10 +5,10 @@
 return [
     // Services to add to the container.
     "services" => [
-        "Comment2Controller" => [
+        "comment2Controller" => [
             "shared" => true,
             "callback" => function () {
-                $obj = new \kifekenny\Comment\Comment2Controller();
+                $obj = new \Kifekenny\Comment\Comment2Controller();
                 $obj->setDI($this);
                 return $obj;
             }

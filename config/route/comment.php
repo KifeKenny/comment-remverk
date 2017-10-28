@@ -8,31 +8,31 @@ return [
             "info" => "Controller index.",
             "requestMethod" => "get",
             "path" => "",
-            "callable" => ["Comment2Controller", "getIndex"],
+            "callable" => ["comment2Controller", "getIndex"],
         ],
         [
             "info" => "Create comment",
             "requestMethod" => "get|post",
             "path" => "create",
-            "callable" => ["Comment2Controller", "comment2Create"],
+            "callable" => ["comment2Controller", "comment2Create"],
         ],
         [
             "info" => "Update an comment",
             "requestMethod" => "get|post",
             "path" => "edit/{id:digit}",
-            "callable" => ["Comment2Controller", "comment2Update"],
+            "callable" => ["comment2Controller", "comment2Update"],
         ],
         [
             "info" => "Delete an Comment.",
             "requestMethod" => "get|post",
             "path" => "delete/{id:digit}",
-            "callable" => ["Comment2Controller", "comment2Delete"],
+            "callable" => ["comment2Controller", "comment2Delete"],
         ],
         [
             "info" => "set session (mostly for testing)",
             "requestMethod" => "get|post",
             "path" => "setUser",
-            "callable" => ["Comment2Controller", "setUser"],
+            "callable" => ["comment2Controller", "setUser"],
         ],
     ]
 ];
