@@ -5,7 +5,7 @@ namespace Kifekenny\Comment;
 use \Anax\Database\ActiveRecordModel;
 
 /**
- * A database driven model.ssss
+ * A database driven model.
  */
 class Comment extends ActiveRecordModel
 {
