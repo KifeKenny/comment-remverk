@@ -7,6 +7,7 @@ Anax comment module
 
 [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/KifeKenny/comment-remverk/badges/build.png?b=master)](https://scrutinizer-ci.com/g/KifeKenny/comment-remverk/)
 
+[![Scrutinizer Code Coverage](https://scrutinizer-ci.com/g/KifeKenny/comment-remverk/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/KifeKenny/comment-remverk/)
 
 
 A Comment module for anax. This module creates comment and add them to
