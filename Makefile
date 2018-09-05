@@ -123,7 +123,7 @@ build: test doc #theme less-compile less-minify js-minify
 
 
 # target: install            - Install all tools
-.PHONY:  install
+.PHONY: install
 install: prepare install-tools-php install-tools-bash
 	@$(call HELPTEXT,$@)
 

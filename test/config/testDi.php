@@ -122,7 +122,12 @@ return [
             "shared" => true,
             "callback" => function () {
                 $obj = new \Anax\Database\DatabaseQueryBuilder();
-                $obj->configure("database.php");
+
+                //for local test
+                // $obj->configure("database.php");
+
+                //when upload for travis
+                $obj->configure("testDatabase.php");
                 return $obj;
             }
         ],

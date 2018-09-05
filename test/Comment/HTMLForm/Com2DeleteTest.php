@@ -25,7 +25,6 @@ class Com2DeleteTest extends \PHPUnit_Framework_TestCase
 
     public function testConstruct()
     {
-        new Com2Delete(self::$dis, 1);
-        // $this->assertTrue($delete);
+        $c2c = new Com2Delete(self::$dis, 1);
     }
 }

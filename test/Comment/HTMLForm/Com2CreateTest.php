@@ -22,8 +22,9 @@ class Com2CreateTest extends \PHPUnit_Framework_TestCase
         self::$dis->configure(ANAX_APP_PATH . "/test/config/testDi.php");
     }
 
+
     public function testConstruct()
     {
-        new Com2Create(self::$dis);
+        $c2c = new Com2Create(self::$dis);
     }
 }

@@ -8,7 +8,7 @@ php:
     - nightly
 
 service:
-  - mysql
+    - mysql
 
 sudo: false
 
@@ -30,8 +30,7 @@ matrix:
         - php: hhvm
 
 before_install:
-    - mysql -u root --password="" < sql/commentsql.sql
-    # - mysql -u root commentsql.sql
+    - mysql -e 'CREATE DATABASE IF NOT EXISTS anaxdb;'
 
 before_script:
     - make install
