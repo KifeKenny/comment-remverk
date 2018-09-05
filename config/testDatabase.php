@@ -6,7 +6,7 @@
 // Local use
 return [
     "dsn"             => "mysql:host=127.0.0.1;dbname=anaxdb;",
-    "username"        => "travis",
+    "username"        => "root",
     "password"        => "",
     "driver_options"  => [\PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'"],
     "fetch_mode"      => \PDO::FETCH_OBJ,

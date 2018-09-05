@@ -2,11 +2,8 @@ Anax comment module
 ==================================
 
 [![Travis CI](https://travis-ci.org/KifeKenny/comment-remverk.svg?branch=master)](https://travis-ci.org/KifeKenny/comment-remverk)
-
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/KifeKenny/comment-remverk/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/KifeKenny/comment-remverk/)
-
 [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/KifeKenny/comment-remverk/badges/build.png?b=master)](https://scrutinizer-ci.com/g/KifeKenny/comment-remverk/)
-
 [![Scrutinizer Code Coverage](https://scrutinizer-ci.com/g/KifeKenny/comment-remverk/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/KifeKenny/comment-remverk/)
 
 
