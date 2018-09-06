@@ -23,6 +23,7 @@ class Com2SessionTest extends \PHPUnit_Framework_TestCase
 
     public function testConstruct()
     {
-        new Com2Session(self::$dis);
+        $c2s = new Com2Session(self::$dis);
+        $this->assertTrue(is_object($c2s), true);
     }
 }

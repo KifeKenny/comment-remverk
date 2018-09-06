@@ -14,6 +14,7 @@ SET NAMES utf8;
 --
 -- Table Comment
 --
+
 CREATE TABLE Comment2 (
     `id` INTEGER PRIMARY KEY AUTO_INCREMENT NOT NULL,
     `title` VARCHAR(80),
@@ -23,6 +24,8 @@ CREATE TABLE Comment2 (
 
 ) ENGINE INNODB CHARACTER SET utf8 COLLATE utf8_swedish_ci;
 
+INSERT INTO `Comment2` (`title`, `content`, `userMail`, `userId`) VALUES
+	("ForTest", "test", "admin@hotmail.com", "1");
 
 
 SELECT * FROM Comment2;

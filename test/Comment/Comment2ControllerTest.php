@@ -11,6 +11,7 @@ class Comment2ControllerTest extends \PHPUnit_Framework_TestCase
 {
     protected static $dis;
     protected static $controller;
+    protected static $session;
     /**
      * Test case to construct object and verify that the object
      * has the expected properties due various ways of constructing

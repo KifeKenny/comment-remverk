@@ -17,7 +17,6 @@ class Com2CreateTest extends \PHPUnit_Framework_TestCase
      */
     public static function setUpBeforeClass()
     {
-        // echo "hi";
         self::$dis = new \Anax\DI\DIFactoryConfig();
         self::$dis->configure(ANAX_APP_PATH . "/test/config/testDi.php");
     }
@@ -26,5 +25,6 @@ class Com2CreateTest extends \PHPUnit_Framework_TestCase
     public function testConstruct()
     {
         $c2c = new Com2Create(self::$dis);
+        $this->assertTrue(is_object($c2c), true);
     }
 }

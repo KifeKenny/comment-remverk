@@ -10,7 +10,6 @@ use PHPUnit\Framework\TestCase;
 class Com2DeleteTest extends \PHPUnit_Framework_TestCase
 {
     protected static $dis;
-    protected static $session;
     /**
      * Test case to construct object and verify that the object
      * has the expected properties due various ways of constructing
@@ -18,7 +17,6 @@ class Com2DeleteTest extends \PHPUnit_Framework_TestCase
      */
     public static function setUpBeforeClass()
     {
-        // echo "hi";
         self::$dis = new \Anax\DI\DIFactoryConfig();
         self::$dis->configure(ANAX_APP_PATH . "/test/config/testDi.php");
     }
@@ -26,5 +24,16 @@ class Com2DeleteTest extends \PHPUnit_Framework_TestCase
     public function testConstruct()
     {
         $c2c = new Com2Delete(self::$dis, 1);
+        $this->assertTrue(is_object($c2c), true);
+    }
+
+    public function testisgetItemDetails()
+    {
+        $c2d = new Com2Update(self::$dis, 1);
+        $recived = $c2d->isgetItemDetails(1);
+
+        $this->assertSame($recived->id, 1);
+        $this->assertSame($recived->title, "ForTest");
+        $this->assertSame($recived->userMail, "admin@hotmail.com");
     }
 }

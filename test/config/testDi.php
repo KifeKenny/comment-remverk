@@ -124,10 +124,10 @@ return [
                 $obj = new \Anax\Database\DatabaseQueryBuilder();
 
                 //for local test
-                // $obj->configure("database.php");
+                $obj->configure("database.php");
 
                 //when upload for travis
-                $obj->configure("testDatabase.php");
+                // $obj->configure("testDatabase.php");
                 return $obj;
             }
         ],
