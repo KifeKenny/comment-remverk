@@ -18,7 +18,7 @@ build:
                 `content` VARCHAR(455) NOT NULL, `userMail` VARCHAR(80) NOT NULL, `userId` INTEGER)
                 ENGINE INNODB CHARACTER SET utf8 COLLATE utf8_swedish_ci;
                 INSERT INTO `Comment2` (`title`, `content`, `userMail`, `userId`) VALUES
-                ("ForTest", "test", "admin@hotmail.com", "1");'
+                (ForTest, test, admin@hotmail.com, 1);'
 
 
         after:
